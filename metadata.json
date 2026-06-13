@@ -1,0 +1,6 @@
+{
+  "name": "GoAyu",
+  "description": "Premium Ayurvedic natural products eCommerce website & AI Ayurvedic Wellness Companion.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
