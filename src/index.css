@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  
+  /* REDEFINING EMERALD CODES (Deep botanical green) */
+  --color-emerald-50: #F4F6EE;
+  --color-emerald-100: #E9EED9;
+  --color-emerald-200: #D5DDC0;
+  --color-emerald-300: #B7C495;
+  --color-emerald-400: #93A662;
+  --color-emerald-500: #6B7C3E;
+  --color-emerald-600: #4B5A24;
+  --color-emerald-700: #38461A;
+  --color-emerald-800: #2D4F1E; /* Primary Warm Organic Green */
+  --color-emerald-850: #224017;
+  --color-emerald-900: #1C3312;
+  --color-emerald-905: #1C3312;
+  --color-emerald-950: #1A3311; /* Deeper majestic forest green */
+  --color-emerald-955: #11220B;
+
+  /* REDEFINING AMBER CODES (Accents & cultural gold) */
+  --color-amber-50: #FAF6ED;
+  --color-amber-100: #F3E7CE;
+  --color-amber-200: #ECD7A0;
+  --color-amber-300: #E3C174;
+  --color-amber-400: #DAAB4F;
+  --color-amber-500: #C5A059; /* Traditional Gold */
+  --color-amber-550: #B28E4D;
+  --color-amber-600: #A17E3F;
+  --color-amber-650: #8E6E34;
+  --color-amber-700: #7A5C2A;
+  --color-amber-800: #62481F;
+  --color-amber-900: #4B3617;
+  --color-amber-950: #3D2B11;
+
+  /* REDEFINING STONE CODES (Warm clay & light-beige sand) */
+  --color-stone-50: #FDFBF7; /* Sacred warm cream page-bg */
+  --color-stone-100: #F5F1E8; /* Secondary background highlight */
+  --color-stone-200: #E5DFC9; /* Traditional organic beige borders */
+  --color-stone-300: #D5CCA2;
+  --color-stone-400: #BAAD7E;
+  --color-stone-500: #9E8F5D;
+  --color-stone-600: #7F7347;
+  --color-stone-700: #5E5533;
+  --color-stone-800: #423C23;
+  --color-stone-900: #262214;
+  --color-stone-950: #14110A;
+
+  --color-light-beige: #F5E6D3;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FDFBF7;
+  color: #2D4F1E;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbars for botanical columns */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FDFBF7;
+}
+::-webkit-scrollbar-thumb {
+  background: #E5DFC9;
+  border-radius: 9px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BAAD7E;
+}
+
+/* Hide scrollbars but keep functionality */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
